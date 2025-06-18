@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liste des enseignants directeurs</title>
+    <link rel="stylesheet" href="styles.css">
+     <style>
+          /* Cacher le bouton menu par défaut */
+    .menu-toggle {
+      display: none;
+    }
+    .menu-icon {
+      font-size: 28px;
+      cursor: pointer;
+      user-select: none;
+      padding: 10px;
+    }
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: none;
+      flex-direction: column;
+      background-color: #2c3e50;
+      position: absolute;
+      top: 60px;
+      right: 0;
+      width: 250px;
+      z-index: 1000;
+      border-radius: 0 0 0 10px;
+    }
+
+    nav ul li {
+      border-bottom: 1px solid #444;
+    }
+
+    nav ul li a {
+      color:white;
+      text-decoration: none;
+      padding: 12px 20px;
+      display: block;
+    }
+
+    nav ul li a:hover {
+      background-color: #1abc9c;
+    }
+
+    /* Quand menu est coché => afficher */
+    .menu-toggle:checked + .menu-icon + nav ul {
+      display: flex;
+    }
+    </style>
+</head>
+<body>
+  <header style="background-color:darkorange ;">
+     <h1>COMPLEXE SCOLAIRE PAULIN DE L'ETERNEL</h1>
+     <h2>Liste des enseignants</h2>
+     <img src="photo/IMG_E2464.JPG" alt="Logo de l'école" class="logo" width="50">
+   <input type="checkbox" id="menu-toggle" class="menu-toggle">
+    <label for="menu-toggle" class="menu-icon">&#9776;</label>
+    
+    <!-- Menu de navigation -->
+     <nav>
+      <ul>
+         <li><a href="Accueil.html">Accueil</a></li>
+        <li><a href="contact.html">Formulaire de contact</a></li>
+        <li><a href="dashboard.html">Tableau de bord</a></li>
+        <li><a href="event.html">Evenement</a></li>
+        <li><a href="gallerie.html">Gallerie</a></li>
+        <li><a href="inscription.html">inscription en ligne</a></li>
+        <li><a href="Listes.html">Nos meilleurs eleves</a></li>
+        <li><a href="paie.html">frais scolaire</a></li>
+        <li><a href="personnels-ecole.html">personnels</a></li>
+        <li><a href="liste_inscriptions.php">les eleves inscrits</a></li>
+      </ul>
+    </nav>
+ </header>
+<section>
+    <input type="text" id="searchInput" placeholder="Rechercher un enseignant...">
+
+    <table id="teacherTable">
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>Nom</th>
+                <th>Prénom</th>
+                <th>Titre</th>
+                <th>Numéro Tel</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Manyayi</td>
+                <td>Aaron</td>
+                <td>Dr des études</td>
+                <td>099272514</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Kandolo</td>
+                <td>John</td>
+                <td>Directeur pédagogique</td>
+                <td>0838619545</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Otshidi</td>
+                <td>Alain</td>
+                <td>Professeur d'anglais</td>
+                <td>095465485</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Omed</td>
+                <td>Argus</td>
+                <td>Professeur Latin</td>
+                <td>095465485</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>Kendli</td>
+                <td>vil</td>
+                <td>Professeur Chimie</td>
+                <td>095465425</td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>Olanga</td>
+                <td>Mputu</td>
+                <td>Professeur Algebre</td>
+                <td>09546854</td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+
+<footer>
+    <p>&copy; 2025 École COMPLEXE SCOLAIRE PAULIN DE L'ÉTERNEL</p>
+</footer>
+
+<script src="recherche.js"></script>
+
+</body>
+</html>

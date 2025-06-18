@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tarifs de l'École</title>
+  <link rel="stylesheet" href="styles.css">
+   <style>
+          /* Cacher le bouton menu par défaut */
+    .menu-toggle {
+      display: none;
+    }
+    .menu-icon {
+      font-size: 28px;
+      cursor: pointer;
+      user-select: none;
+      padding: 10px;
+    }
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: none;
+      flex-direction: column;
+      background-color: #2c3e50;
+      position: absolute;
+      top: 60px;
+      right: 0;
+      width: 250px;
+      z-index: 1000;
+      border-radius: 0 0 0 10px;
+    }
+
+    nav ul li {
+      border-bottom: 1px solid #444;
+    }
+
+    nav ul li a {
+      color:white;
+      text-decoration: none;
+      padding: 12px 20px;
+      display: block;
+    }
+
+    nav ul li a:hover {
+      background-color: #1abc9c;
+    }
+
+    /* Quand menu est coché => afficher */
+    .menu-toggle:checked + .menu-icon + nav ul {
+      display: flex;
+    }
+    </style>
+</head>
+<body>
+
+  <header style="background-color:darkorange ;">
+     <h1>COMPLEXE SCOLAIRE PAULIN DE L'ETERNEL</h1>
+     <h2>Nos tarifs</h2>
+     <img src="photo/IMG_E2464.JPG" alt="Logo de l'école" class="logo" width="50">
+   <input type="checkbox" id="menu-toggle" class="menu-toggle">
+    <label for="menu-toggle" class="menu-icon">&#9776;</label>
+    
+   <nav>
+      <ul>
+         <li><a href="Accueil.html">Accueil</a></li>
+        <li><a href="contact.html">Formulaire de contact</a></li>
+        <li><a href="dashboard.html">Tableau de bord</a></li>
+        <li><a href="event.html">Evenement</a></li>
+        <li><a href="gallerie.html">Gallerie</a></li>
+        <li><a href="inscription.html">inscription en ligne</a></li>
+        <li><a href="Listes.html">Nos meilleurs eleves</a></li>
+        <li><a href="paie.html">frais scolaire</a></li>
+        <li><a href="personnels-ecole.html">personnels</a></li>
+        <li><a href="liste_inscriptions.php">les eleves inscrits</a></li>
+      </ul>
+    </nav>
+ </header>
+<section class="tarifs">
+  <h2>📊 Tarifs de l’École</h2>
+  <p>Découvrez nos tarifs pour l'année scolaire 2025. Nous proposons des prix abordables pour garantir un accès à une éducation de qualité pour tous les enfants.</p>
+
+  <div class="tarif-item">
+    <h3>🏫 Inscription par Niveau</h3>
+    <table>
+      <thead>
+        <tr>
+          <th>Niveau</th>
+          <th>Frais Scolaire </th>
+          <th>Frais annuel</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Maternelle</td>
+          <td>35$</td>
+          <td>15$</td>
+        </tr>
+        <tr>
+          <td>Primaire</td>
+          <td>40$</td>
+          <td>20$</td>
+        </tr>
+        <tr>
+          <td>Secondaire</td>
+          <td>45$</td>
+          <td>25$</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="tarif-item">
+    <h3>🎒 Frais supplémentaires</h3>
+    <ul>
+      <li>Frais de transport : 150$ (optionnel, selon le lieu de résidence)</li>
+      <li>Uniforme scolaire : 35$ (en fonction du niveau)</li>
+      <li>Activités extra-scolaires : 25$ par trimestre</li>
+    </ul>
+  </div>
+
+  <div class="tarif-item">
+    <h3>💡 Réductions et Aides</h3>
+    <p>Nous proposons des réductions pour les familles ayant plusieurs enfants inscrits. N’hésitez pas à nous contacter pour plus d'informations sur les bourses ou les aides financières disponibles.</p>
+  </div>
+
+ 
+
+<footer>
+  <p>Tous droit reservé CSPE SCHOOL</p>
+</footer>
+
+</body>
+</html>

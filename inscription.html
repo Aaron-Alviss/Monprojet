@@ -1,0 +1,49 @@
+<!-- inscription.html -->
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Inscription à l'école</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header style="background-color: #0b0b2e; padding: 20px; text-align: center;">
+         <img src="photo/IMG_E2464.JPG" alt="Logo de l'école" class="logo" width="50">
+  <h1 style="color: white; font-family: Arial, sans-serif; font-size: 28px; margin: 0;">
+    🎓 Inscription à l'école 
+  </h1>
+  <p style="color: #ddd; margin-top: 10px; font-family: Arial, sans-serif;">
+    Veuillez remplir soigneusement le formulaire ci-dessous pour inscrire votre enfant.
+  </p>
+  <li><a href="Accueil.html">Retour a l'accueil</a></li>
+</header>
+<p >
+  Pour toute inscription scolaire, veuillez remplir ce formulaire avec des informations exactes et complètes. 
+  Ce formulaire est destiné à recueillir les données de base nécessaires pour le traitement de l'inscription de votre enfant. 
+  En cas de problème ou de demande particulière (dérogation, absence prolongée, changement de niveau…), 
+  n’hésitez pas à nous contacter ou à passer par le secrétariat de l’école pour un accompagnement personnalisé.
+</p>
+
+
+    <form action="inscription.php" method="post">
+        Nom : <input type="text" name="nom" required><br><br>
+        Prénom : <input type="text" name="prenom" required><br><br>
+        Email : <input type="email" name="email" required><br><br>
+        Téléphone : <input type="text" name="telephone" required><br><br>
+        Niveau scolaire :
+        <select name="niveau" required>
+            <option value="">--Choisir un niveau--</option>
+            <option value="6ème">6ème</option>
+            <option value="5ème">5ème</option>
+            <option value="4ème">4ème</option>
+            <option value="3ème">3ème</option>
+            <option value="2nde">2nde</option>
+            <option value="1ère">1ère</option>
+            <option value="Terminale">Terminale</option>
+        </select><br><br>
+        <input type="submit" value="S'inscrire">
+    </form>
+    <a href="liste_inscriptions.php">📄 Voir les inscriptions</a>
+
+</body>
+</html>

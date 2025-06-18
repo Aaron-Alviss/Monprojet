@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Événements de l'école</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+     /* Cacher le bouton menu par défaut */
+    .menu-toggle {
+      display: none;
+    }
+  
+
+    .menu-icon {
+      font-size: 28px;
+      cursor: pointer;
+      user-select: none;
+      padding: 10px;
+    }
+
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: none;
+      flex-direction: column;
+      background-color: #2c3e50;
+      position: absolute;
+      top: 60px;
+      right: 0;
+      width: 250px;
+      z-index: 1000;
+      border-radius: 0 0 0 10px;
+    }
+
+    nav ul li {
+      border-bottom: 1px solid #444;
+    }
+
+    nav ul li a {
+      color:white;
+      text-decoration: none;
+      padding: 12px 20px;
+      display: block;
+    }
+
+    nav ul li a:hover {
+      background-color: #1abc9c;
+    }
+
+    /* Quand menu est coché => afficher */
+    .menu-toggle:checked + .menu-icon + nav ul {
+      display: flex;
+    }
+  </style>
+</head>
+<body> 
+
+   <header  style="background-color: burlywood;";  color: #333;">
+      <input type="checkbox" id="menu-toggle" class="menu-toggle">
+    <label for="menu-toggle" class="menu-icon">&#9776;</label>
+    
+    <nav>
+      <ul>
+        <li><a href="Accueil.html">Accueil</a></li>
+        <li><a href="contact.html">Formulaire de contact</a></li>
+        <li><a href="dashboard.html">Tableau de bord</a></li>
+        <li><a href="event.html">Evenement</a></li>
+        <li><a href="gallerie.html">Gallerie</a></li>
+        <li><a href="inscription.html">inscription en ligne</a></li>
+        <li><a href="Listes.html">Nos meilleurs eleves</a></li>
+        <li><a href="paie.html">frais scolaire</a></li>
+        <li><a href="personnels-ecole.html">personnels</a></li>
+        <li><a href="liste_inscriptions.php">les eleves inscrits</a></li>
+      </ul>
+    </nav>
+  <header>
+    <h1>Événements de l'école</h1>
+    <h2>Sport, culture et découvertes</h2>
+    <p class="mv">
+      L’école ne se résume pas uniquement aux cours et aux devoirs. 
+      Elle est aussi un lieu de vie, de partage et de découvertes. 
+      Tout au long de l’année, de nombreux événements sont organisés 
+      pour permettre aux élèves de s’épanouir, de développer leur esprit 
+      d’équipe et de créer des souvenirs inoubliables. Que ce soit à travers
+       des compétitions sportives comme le tournoi de football ou les matchs
+        de basket interclasses, ou bien lors de sorties pédagogiques enrichissantes,
+         chaque moment passé ensemble renforce les liens entre les élèves, les professeurs
+          et l’ensemble de la communauté éducative. Ces activités, au-delà de leur aspect ludique,
+           favorisent aussi la curiosité, la responsabilité et le vivre-ensemble. L’école encourage 
+           vivement la participation de tous pour faire de chaque événement un moment unique
+            et fédérateur, où chacun peut exprimer ses talents et partager sa bonne humeur.
+
+
+    </p>
+  </header>
+
+  <section class="events">
+    <div class="event">
+      <img src="photo/terrain-foot-ecole.jpg" alt="Match de foot">
+      <div class="event-content">
+        <h2>Tournoi de Football</h2>
+        <p>Le 15 mai - Stade du lycée</p>
+      </div>
+    </div>
+
+    <div class="event">
+      <img src="photo/bask.jpg" alt="Basket">
+      <div class="event-content">
+        <h2>Match de Basket</h2>
+        <p>Le 22 mai - Gymnase municipal</p>
+      </div>
+    </div>
+
+    <div class="event">
+      <img src="photo/aqua.jpg" alt="Sortie">
+      <div class="event-content">
+        <h2>Sortie scolaire</h2>
+        <p>Le 30 mai - S'amuser chez Aqua</p>
+      </div>
+    </div>
+
+    <div class="event">
+      <img src="photo/king.jpg" alt="Pique-nique">
+      <div class="event-content">
+        <h2>Kingasani fin d'année</h2>
+        <p>Le 10 juin - Kingasani visite</p>
+      </div>
+    </div>
+  </section>
+</body>
+</html>
